@@ -1,0 +1,116 @@
+.solutions {
+    max-height: 400px;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                      rgba(47, 48, 58, 0.4)),
+                      url("../images/solucionesphone@1x.jpg");
+    background-size: cover;
+  
+
+    &__h1 {
+        width: 360px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 118px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        letter-spacing: .06em;
+        color: var(--colorwhite);
+        text-transform: uppercase;
+        /*border: 2px solid red;*/
+    }
+
+    &__button {
+        margin-bottom: 118px;
+        padding: 10px 32px;
+        font-weight: 700;
+        line-height: 1.875;
+        letter-spacing: .06em;
+        color: var(--colorwhite);
+        background-color: var(--colorwebstudio);
+        border-radius: 4px;
+        transition: color;
+        transition: background-color;
+        /*border: 2px solid red;*/
+        &:hover {
+            color: var(--colorwebstudio);
+            background-color: var(--colorwhite);
+            transition: var(--transition);
+        }
+        &:focus {
+            color: var(--colorwebstudio);
+            background-color: var(--colorwhite);
+            border: 3px solid var(--colorwebstudio);
+            transition: var(--transition);
+        }
+        &:active {
+            color: var(--colornormal);
+            background-color: var(--colorwhite);
+            border: 3px solid var(--colorwebstudio);
+            transition: var(--transition);
+        }
+    }
+}
+  
+@media screen and (min-width: 768px) {
+    .solutions {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../images/solucionestablet@1x.jpg");
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .solutions {
+        max-height: 600px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../images/soluciones@1x.jpg");
+        
+        &__h1 {
+            width:696px;
+            padding-top: 150px;
+            font-size: 44px;
+            line-height: 1.36;
+        }
+
+        &__button {
+            margin-bottom: 200px;
+        }
+    }
+}
+
+@media (min-device-pixel-ratio: 2px),
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) {
+        .solutions {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url("../images/solucionesphone@2x.jpg");
+    }
+}
+
+@media screen and (min-width: 768px) 
+and (min-device-pixel-ratio: 2px),
+(min-resolution: 192dpi), 
+(min-resolution: 2dppx) {
+    .solutions {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../images/solucionestablet@2x.jpg");
+    }
+}
+
+@media screen and (min-width: 1200px)
+and (min-device-pixel-ratio: 2px),
+(min-resolution: 192dpi), 
+(min-resolution: 2dppx) {
+    .solutions {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../images/soluciones@2x.jpg");
+    }
+}

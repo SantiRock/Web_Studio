@@ -1,0 +1,110 @@
+.menu {
+    &__container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 21px;
+        padding-right: 25px;
+        background-color: white;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+        &.is-open {
+            transform: translateX(0);
+          }
+    }
+
+    &__btn{
+        margin-left: auto;
+        margin-right: 23px;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        /*border: 1px solid red;*/
+    }
+
+    &__svg{
+        width: 24px;
+        height: 24px;
+        transition: fill;
+        transition: var(--transition);
+        &:hover,
+        &:focus {
+            fill: var(--colorwebstudio);
+        } 
+    }
+
+    &__btnclose {
+        margin-left: calc(100% - 25px);
+        padding: 0;
+        background-color: transparent;
+    }
+
+    &__svgclose {
+        width: 19px;
+        height: 19px;
+        transition: fill;
+        transition: var(--transition);
+        &:hover,
+        &:focus {
+            fill: var(--colorwebstudio); }
+    }
+
+}
+
+  .mobile {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+
+    &__a{
+        margin-bottom: 32px;
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: var(--colornormal);
+        text-decoration: none;
+    }
+    
+    &__tel { 
+        margin-top:302px;
+        font-size: 34px; }
+    
+    &__email { 
+        font-size: 24px;
+        margin-bottom: 64px;
+    }
+
+    &__socials {
+        flex-direction: row;
+    }
+
+    &__social {
+        padding-right: 10px;
+        font-size: 18px;
+        color: var(--colorwebstudio);
+        transition: color;
+        transition: var(--transition);
+        &:hover,
+        &:focus {
+            color: var(--colornormal); }
+    }
+
+    &__deco {
+        padding-left: 10px;
+        border-left : 1px solid #21212133;
+    }
+
+  }
+
+@media screen and (min-width: 768px) {
+    .menu__btn {
+        display: none;
+    }
+}

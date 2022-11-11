@@ -1,0 +1,241 @@
+.is-hidden { 
+    visibility: hidden;
+    transition-property: visibility;
+    transition-duration: 1000ms;
+    .backdrop { opacity: 0; }
+    .modal { opacity: 0; }
+    .closemodal { opacity: 0; }
+}
+  
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000033;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1000ms;
+}
+    
+.modal {
+    margin: auto;
+    width: 450px;
+    height: 609px;
+    text-align: start;
+    background-color: var(--colorwhite);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1000ms;
+
+    &__form {
+        margin-left: 40px;
+        width: 370px;
+        /*border: 1px solid red;*/
+    }
+
+    &__h5 {
+        margin:0;
+        margin-top: 2px;
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    &__p {
+        margin-top: 10px;
+        margin-bottom: 4px;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+    }
+
+    &__input {
+        padding-left: 42px; 
+        width: 100%;
+        height: 40px;
+        border: 1px solid #21212133;
+        border-radius: 4px;
+        opacity: 1;
+        &:hover {
+            border: 1px solid var(--colorwebstudio);
+            outline: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        &:active {
+            border: 1px solid var(--colorwebstudio);
+            outline: none;
+            transition: var(--transition);
+        }
+    }
+
+    &__name {
+        background-image: url("../images/modalname.svg");
+        background-repeat: no-repeat;
+        background-position: 15px 14px;
+        &:hover {
+            background-image: url("../images/modalname1.svg");
+        }
+        &:focus {
+            background-image: url("../images/modalname1.svg");
+        }
+    }
+
+    &__tel {
+        background-image: url("../images/modaltel.svg");
+        background-repeat: no-repeat;
+        background-position:14px 13px;
+        &:hover {
+            background-image: url("../images/modaltel1.svg");
+        }
+        &:focus {
+            background-image: url("../images/modaltel1.svg");
+        }
+    }
+
+    &__email {
+        background-image: url("../images/modalemail.svg");
+        background-repeat: no-repeat;
+        background-position:13px 14px;
+        &:hover {
+            background-image: url("../images/modalemail1.svg");
+        }
+        &:focus {
+            background-image: url("../images/modalemail1.svg");
+        }
+    }
+
+    &__textarea {
+        padding: 12px 16px;
+        width: 100%;
+        height: 120px;
+        resize: none;
+        border: 1px solid #21212133;
+        border-radius: 4px;
+        &:hover {
+            border: 1px solid var(--colorwebstudio);
+            outline: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        &:focus {
+            border: 1px solid var(--colorwebstudio);
+            outline: none;
+            transition: var(--transition);
+        }
+    }
+
+    &__submit{
+        width: 200px;
+        height: 50px;
+        margin-left: 85px;
+        color: var(--colorwhite);
+        background-color: var(--colorwebstudio);
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+
+.checkbox {
+    margin-top: 18px;
+    display: flex;
+    /*  border: 1px solid blue;*/
+
+    &__input {
+        position: relative;
+        top: 5px;
+        margin-right: 8px;
+        padding: 0;
+        width: 15px;
+        height: 15px;
+        border: 2px solid var(--colorbold);
+        background-color: var(--colorwhite);
+        border-radius: 2px;
+        transition-duration: 0ms;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        &:checked {
+            border: 0;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='10' fill='white' stroke='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.811 4.159C5.999 5.887 4.506 7.298 4.492 7.296c-.02-.004-1.235-1.154-2.417-2.288l-.189-.182-.428.408c-.236.224-.436.413-.445.42-.019.017 3.446 3.327 3.483 3.327.023 0 1.279-1.194 6.07-5.767L12 1.845l-.434-.413a9.776 9.776 0 0 0-.448-.414c-.008 0-1.496 1.414-3.307 3.141' fill='%23fff' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: 1px 3px;
+            background-color: var(--colorwebstudio);
+        }
+    }
+
+    &__p {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        /*border: 1px solid red;*/
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+    
+      &__form {
+            width: 448px;
+      }
+    
+       &__submit{
+            margin-left: 124px;
+       }
+           
+    }
+
+    .checkbox { margin-left: 10px;}
+}
+
+
+.closemodal {
+    text-align: right;
+
+    &__button {
+        margin-top: 8px;
+        margin-right: 8px;
+        margin-bottom: 0;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        background-color: var(--colorwhite);
+        border: 1px solid #0000001a;
+        border-radius: 15px;
+        &:hover {
+            .closemodal__svg {
+                fill: var(--colorwebstudio);
+                transition: var(--transition);
+            }
+        }
+        &:active {
+            border: 1px solid var(--colorwebstudio);
+        } 
+    }
+    
+    &__svg {
+        width: 11px;
+        height: 11px;
+        fill: black;
+    }
+}
+
+

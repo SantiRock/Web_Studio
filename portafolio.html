@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="WebStudio" />
+    <meta name="description" content="Portafolio WebStudio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main-portafolio.min.css" />
+    <title>Portafolio</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="./index.html">WebStudio</a>
+
+        <button
+          class="menu__btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile"
+        >
+          <svg class="menu__svg">
+            <use href="./images/icons.svg#menuphone"></use>
+          </svg>
+        </button>
+
+        <div class="header__menu">
+          <nav>
+            <a class="header__a header__select" href="./index.html">Estudio </a>
+            <a class="header__a bold" href="./portafolio.html">Portafolio</a>
+            <a class="header__a bold" href="./contactos.html">Contactos</a>
+          </nav>
+
+          <div class="hc">
+            <a class="header__a" href="mailto:info@devstudio.com">
+              <svg class="header__svgmail">
+                <use href="./images/icons.svg#sobre"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+            <a class="header__a header__tel" href="tel:+525555296000">
+              <svg class="header__svgtel">
+                <use href="./images/icons.svg#telefono"></use>
+              </svg>
+              +52 55 5529 6000</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <ul class="categories">
+        <li><button class="categories__button" type="button">Todo</button></li>
+        <li><button class="categories__button" type="button">Sitios-web</button></li>
+        <li><button class="categories__button" type="button">Aplicaciones</button></li>
+        <li><button class="categories__button" type="button">Diseño</button></li>
+        <li><button class="categories__button" type="button">Marketing</button></li>
+      </ul>
+
+      <ul class="project">
+        <li>
+          <article class="project__article">
+              <div class="project__image">
+                <img
+                  src="./images/2portafolio1@1x.jpg"
+                  alt="Tecnoduck"
+                  srcset="./images/2portafolio1@2x.jpg 2x"
+                />
+                <p class="project__texthide">
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <div class="project__text">
+                <h4 class="project__name">Tecnoduck</h4>
+                <p class="project__type">Sitio-web</p>
+              </div>
+          </article>
+        </li>
+        <li>
+          <article class="project__article">
+              <div class="project__image">
+                <img
+                  src="./images/2portafolio2@1x.jpg"
+                  alt="Póster de Nueva Orleans vs Estrella Dorada"
+                  srcset="./images/2portafolio2@2x.jpg 2x"
+                />
+                <p class="project__texthide">
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <div class="project__text">
+                <h4 class="project__name">Póster de Nueva Orleans vs Estrella Dorada</h4>
+                <p class="project__type">Diseño</p>
+              </div>
+          </article>
+        </li>
+        <li>
+          <article class="project__article">
+              <div class="project__image">
+                <img
+                  src="./images/2portafolio3@1x.jpg"
+                  alt="Restaurante Seafood"
+                  srcset="./images/2portafolio3@2x.jpg 2x"
+                />
+                <p class="project__texthide">
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <div class="project__text">
+                <h4 class="project__name">Restaurante Seafood</h4>
+                <p class="project__type">Aplicaciones</p>
+              </div>
+          </article>
+        </li>
+        <li>
+          <article class="project__article">
+              <div class="project__image">
+                <img
+                  src="./images/2portafolio4@1x.jpg"
+                  alt="Proyecto Prime"
+                  srcset="./images/2portafolio4@2x.jpg 2x"
+                />
+                <p class="project__texthide">
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <div class="project__text">
+                <h4 class="project__name">Proyecto Prime</h4>
+                <p class="project__type">Marketing</p>
+              </div>
+          </article>
+        </li>
+        <li>
+          <article class="project__article">
+              <div class="project__image">
+                <img
+                  src="./images/2portafolio5@1x.jpg"
+                  alt="Proyecto Cajas"
+                  srcset="./images/2portafolio5@2x.jpg 2x"
+                />
+                <p class="project__texthide">
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <div class="project__text">
+                <h4 class="project__name">Proyecto Cajas</h4>
+                <p class="project__type">Aplicaciones</p>
+              </div>
+          </article>
+        </li>
+        <li>
+          <article class="project__article">
+              <div class="project__image">
+                <img
+                  src="./images/2portafolio6@1x.jpg"
+                  alt="La inspiración no tiene límites"
+                  srcset="./images/2portafolio6@2x.jpg 2x"
+                />
+                <p class="project__texthide">
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <div class="project__text">
+                <h4 class="project__name">La inspiraciòn no tiene límites</h4>
+                <p class="project__type">Sitio-Web</p>
+              </div>
+          </article>
+        </li>
+        <li>
+          <article class="project__article">
+              <div class="project__image">
+                <img
+                  src="./images/2portafolio7@1x.jpg"
+                  alt="Edición Limitada"
+                  srcset="./images/2portafolio7@2x.jpg 2x"
+                />
+                <p class="project__texthide">
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <div class="project__text">
+                <h4 class="project__name">Edición Limitada</h4>
+                <p class="project__type">Diseño</p>
+              </div>
+          </article>
+        </li>
+        <li>
+          <article class="project__article">
+              <div class="project__image">
+                <img
+                  src="./images/2portafolio8@1x.jpg"
+                  alt="Proyecto LAB"
+                  srcset="./images/2portafolio8@2x.jpg 2x"
+                />
+                <p class="project__texthide">
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <div class="project__text">
+                <h4 class="project__name">Proyecto LAB</h4>
+                <p class="project__type">Marketing</p>
+              </div>
+          </article>
+        </li>
+        <li>
+          <article class="project__article">
+              <div class="project__image">
+                <img
+                  src="./images/2portafolio9@1x.jpg"
+                  alt="Negocio en Crecimiento"
+                  srcset="./images/2portafolio9@2x.jpg 2x"
+                />
+                <p class="project__texthide">
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <div class="project__text">
+                <h4 class="project__name">Negocio en Crecimiento</h4>
+                <p class="project__type">Aplicaciones</p>
+              </div>
+          </article>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="footer" >
+      <div class="container footer__container">
+        <div class="footer__blockaddress" title="address">
+          <a class="logo" href="./index.html">WebStudio</a>
+          <address class="footer__address">
+            Calz. Ticomán 500, Ciudad de <br />
+            México, CDMX, México
+          </address>
+          <address>
+            <a class="footer__contact" href="mailto:info@example.com"
+              >info@example.com</a
+            ><br />
+            <a class="footer__contact" href="tel:+525555296000">+52 55 5529 6000</a>
+          </address>
+        </div>
+
+        <ul class="social">
+          <li><h4 class="footer__title">Encuentranos en</h4></li>
+          <li>
+            <button class="social__button" type="button">
+              <svg class="social__svg">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="social__button" type="button">
+              <svg class="social__svg">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="social__button" type="button">
+              <svg class="social__svg">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="social__button" type="button">
+              <svg class="social__svg">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+
+        <form name="boletin">
+          <h4 class="footer__title">Subscríbase al boletín informativo</h4>
+          <label>
+            <input class="footer__input" type="email" name="emailboletin" placeholder="Correo electrónico" required>
+          </label>
+          <button class="footer__subscribe" type="submit"> 
+            Subscríbase
+            <svg class="footer__svg">
+              <use href="./images/icons.svg#footersend"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+    <div class="menu__container js-menu-container" id="mobile">
+      <button class="menu__btnclose js-close-menu">
+        <svg class="menu__svgclose">
+          <use href="./images/icons.svg#modalx"></use>
+        </svg>
+      </button>
+
+      <div class="mobile">
+        <a href="./index.html" class="mobile__a bold">Estudio</a>
+        <a href="./portafolio.html" class="mobile__a bold">Portafolio</a>
+        <a href="./contactos.html" class="mobile__a bold">Contactos</a>  
+          <a class="mobile__a mobile__tel" href="tel:+525555296000">
+          +52 55 5529 6000
+          </a>
+          <a class="mobile__a mobile__email" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        <div class="mobile__socials">
+          <a class="mobile__social" >Instagram</a></li>
+          <a class="mobile__social mobile__deco">Twitter</a>
+          <a class="mobile__social mobile__deco">Facebook</a>
+          <a class="mobile__social mobile__deco">LinkedIn</a>
+        </div>
+      </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/modal.js"></script>
+
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>

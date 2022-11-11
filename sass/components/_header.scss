@@ -1,0 +1,111 @@
+
+.bold { color: var(--colorbold); }
+
+.header {
+    border-bottom: 1px solid #ececec; 
+
+    &__container {
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        height: 80px;
+        /*border: 2px solid red;*/
+    }
+    
+    &__menu {
+        margin-left: 8%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*border: 1px solid blue;*/
+    }
+
+    &__a {
+        margin-right: 50px;
+        font-weight: 500;
+        line-height: 1.143;
+        letter-spacing: .02em;
+        &:hover {
+            svg {
+                fill: var(--colorwebstudio);
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    &__select {
+        /* page in use */
+        position: relative;
+        color: var(--colorwebstudio);
+        &::after{
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            content: "";
+            background: var(--colorwebstudio);
+            border-radius: 2px;
+          }
+    }
+
+    &__svgmail {
+        position: relative;
+        top: 1px;
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+        fill: var(--colornormal);
+        transition: fill;
+        transition: var(--transition);
+    }
+
+    &__tel { margin-right: 0; }
+
+    &__svgtel {
+        position: relative;
+        right: 9px;
+        top: 2px;
+        width: 10px;
+        height: 16px;
+        fill: var(--colornormal);
+        transition: fill;
+        transition: var(--transition);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hc {
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        /*border: 1px solid red;*/
+    }
+    .hc .header__a {
+        margin-right: 15px;
+    }
+    .hc .header__tel {
+        position: relative;
+        left: 9px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .header__container { padding-left: 0; }
+    .header__menu {
+        margin-left: 93px;
+    }
+}
+
