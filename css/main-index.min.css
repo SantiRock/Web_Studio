@@ -418,8 +418,8 @@ a:active {
 
 .modal {
   margin: auto;
-  width: 450px;
-  height: 609px;
+  width: calc(100% - 30px);
+  max-width: 450px;
   text-align: start;
   background-color: var(--colorwhite);
   border-radius: 4px;
@@ -429,8 +429,9 @@ a:active {
   transition-duration: 1000ms;
 }
 .modal__form {
-  margin-left: 40px;
-  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 80px);
   /*border: 1px solid red;*/
 }
 .modal__h5 {
@@ -449,7 +450,7 @@ a:active {
   letter-spacing: 0.01em;
 }
 .modal__input {
-  padding-left: 42px;
+  padding-left: 10px;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -522,7 +523,8 @@ a:active {
 .modal__submit {
   width: 200px;
   height: 50px;
-  margin-left: 85px;
+  margin-bottom: 40px;
+  margin-left: calc(50% - 100px);
   color: var(--colorwhite);
   background-color: var(--colorwebstudio);
   border-radius: 4px;
@@ -568,6 +570,7 @@ a:active {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    max-width: 528px;
     height: 581px;
   }
   .modal__form {

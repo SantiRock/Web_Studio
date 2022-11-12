@@ -25,8 +25,8 @@
     
 .modal {
     margin: auto;
-    width: 450px;
-    height: 609px;
+    width: calc(100% - 30px);
+    max-width: 450px;
     text-align: start;
     background-color: var(--colorwhite);
     border-radius: 4px;
@@ -38,8 +38,9 @@
     transition-duration: 1000ms;
 
     &__form {
-        margin-left: 40px;
-        width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100% - 80px);
         /*border: 1px solid red;*/
     }
 
@@ -61,7 +62,7 @@
     }
 
     &__input {
-        padding-left: 42px; 
+        padding-left: 10px;
         width: 100%;
         height: 40px;
         border: 1px solid #21212133;
@@ -139,7 +140,8 @@
     &__submit{
         width: 200px;
         height: 50px;
-        margin-left: 85px;
+        margin-bottom: 40px;
+        margin-left: calc(50% - 100px);
         color: var(--colorwhite);
         background-color: var(--colorwebstudio);
         border-radius: 4px;
@@ -190,6 +192,7 @@
 @media screen and (min-width: 1200px) {
     .modal {
         width: 528px;
+        max-width: 528px;
         height: 581px;
     
       &__form {
