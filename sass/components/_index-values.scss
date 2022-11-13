@@ -1,12 +1,7 @@
 .values {
-    margin: 0;
-    padding-top: 0;
-    padding-left: 15px;
-    padding-right: 15px;
     /*border: 3px solid red;*/
 
-    &__div {
-      margin-top: 0;
+    &__icon {
       margin-bottom: 30px;
       text-align: center;
       background-color: var(--colorgrey);
@@ -22,8 +17,6 @@
       }
 
     &__h3 {
-        margin: 0;
-        padding-right: 0;  
         font-size: 14px;
         line-height: 1.143;
         color: var(--colorbold);
@@ -37,7 +30,6 @@
         margin-bottom: 30px;
         font-size: 14px;
         line-height: 1.71;
-        letter-spacing: .03em;
         /*border: 1px solid blue;*/
       }
       
@@ -48,14 +40,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    &__li { width: calc(50% - 15px); }
+    &__container { width: calc(50% - 15px); }
+    &__h3 {text-align: left;}
   }
 }
 
 @media screen and (min-width: 1200px) {
   .values {
-    padding: 0;
-    &__li {
+    &__container {
       width: 270px;
     }
   }

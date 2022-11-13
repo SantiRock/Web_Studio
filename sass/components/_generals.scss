@@ -2,52 +2,46 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: var(--colornormal);
+    letter-spacing: .03em;
 }
 
 .logo { 
     /* Logo WebStudio */
     font-family: "Raleway", sans-serif;
     font-size: 26px;
-    line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--colorwebstudio);
     text-decoration: none;
     /*border: 1px solid red;*/
 }
 
-@media screen and (min-width: 1200px) {
-    .logo { margin-left: 0;}
-}  
-  
 .container {
+    padding-left: 15px;
+    padding-right: 15px;
     width: 100%;
     min-width: 320px;
    /*border: 1px solid red;*/
 }
 
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 100%; 
-        /*border: 1px solid blue;*/
-    }
-}
+.section { padding-top: 60px; }
 
 @media screen and (min-width: 1200px) {
     .container {
+        padding-left: 0;
+        padding-right: 0;
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px;
         /*border: 1px solid green;*/
     }
+    .section { padding-top: 94px;
+    }
 }
 
-.section { padding-top: 60px; }
-
-@media screen and (min-width: 1200px) {
-    .section { padding-top: 94px; }
-}
-
-ul { list-style-type: none; }
+ul { 
+    list-style-type: none;
+    padding: 0;
+ }
   
 li { display: inline; }
   
@@ -74,12 +68,9 @@ a {
     transition: var(--transition);
     cursor: pointer;
     &:hover {
-        color: var(--colorwebstudio); 
-    }
+        color: var(--colorwebstudio); }
     &:focus {
-        color: var(--colorwebstudio); 
-    }
+        color: var(--colorwebstudio); }
     &:active {
-        color: var(--colorwebstudio); 
-    }
+        color: var(--colorwebstudio); }
 }

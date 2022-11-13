@@ -27,7 +27,7 @@
     margin: auto;
     width: calc(100% - 30px);
     max-width: 450px;
-    text-align: start;
+    text-align: left;
     background-color: var(--colorwhite);
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -45,13 +45,13 @@
     }
 
     &__h5 {
-        margin:0;
         margin-top: 2px;
         margin-bottom: 12px;
         font-weight: 700;
         font-size: 20px;
+        color: var(--colorbold);
         text-align: center;
-        letter-spacing: 0.03em;
+        line-height: 1.15;
     }
 
     &__p {
@@ -62,7 +62,7 @@
     }
 
     &__input {
-        padding-left: 10px;
+        padding-left: 42px;
         width: 100%;
         height: 40px;
         border: 1px solid #21212133;
@@ -96,7 +96,7 @@
     &__tel {
         background-image: url("../images/modaltel.svg");
         background-repeat: no-repeat;
-        background-position:14px 13px;
+        background-position: 14px 13px;
         &:hover {
             background-image: url("../images/modaltel1.svg");
         }
@@ -108,7 +108,7 @@
     &__email {
         background-image: url("../images/modalemail.svg");
         background-repeat: no-repeat;
-        background-position:13px 14px;
+        background-position: 13px 14px;
         &:hover {
             background-image: url("../images/modalemail1.svg");
         }
@@ -142,9 +142,6 @@
         height: 50px;
         margin-bottom: 40px;
         margin-left: calc(50% - 100px);
-        color: var(--colorwhite);
-        background-color: var(--colorwebstudio);
-        border-radius: 4px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 }
@@ -159,13 +156,11 @@
         position: relative;
         top: 5px;
         margin-right: 8px;
-        padding: 0;
         width: 15px;
         height: 15px;
         border: 2px solid var(--colorbold);
         background-color: var(--colorwhite);
         border-radius: 2px;
-        transition-duration: 0ms;
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -179,11 +174,10 @@
     }
 
     &__p {
-        margin: 0;
+        margin-top: 0;
         margin-bottom: 15px;
         font-size: 14px;
         line-height: 1.71;
-        letter-spacing: 0.03em;
         /*border: 1px solid red;*/
     }
 }
@@ -191,20 +185,10 @@
 
 @media screen and (min-width: 1200px) {
     .modal {
-        width: 528px;
         max-width: 528px;
-        height: 581px;
-    
-      &__form {
-            width: 448px;
-      }
-    
-       &__submit{
-            margin-left: 124px;
-       }
-           
+        &__form { width: 448px; }
+        &__submit{ margin-left: 124px; }
     }
-
     .checkbox { margin-left: 10px;}
 }
 
@@ -214,9 +198,7 @@
 
     &__button {
         margin-top: 8px;
-        margin-right: 8px;
-        margin-bottom: 0;
-        padding: 0;
+        margin-right: 8px; 
         width: 30px;
         height: 30px;
         text-align: center;

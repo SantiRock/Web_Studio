@@ -1,17 +1,14 @@
 .team {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     background-color: #f5f4fa;
 
-    &__ul {
-        padding-left: 15px;
-        padding-right: 15px;
+    &__container {
         font-size: 16px;
-        letter-spacing: .03em;
         text-align: center;
         /*border: 1px solid blue;*/
       }
 
-    &__li {
+    &__member {
         margin-bottom: 30px;
         background-color: var(--colorwhite);
         box-shadow: 0 1px 3px rgba(0 0 0 / .12), 
@@ -27,7 +24,6 @@
     &__name {
         margin: 0;
         padding-top: 25px;
-        font-size: 16px;
         font-weight: 500;
         color: var(--colorbold);
         /*border: 1px solid blue;*/
@@ -69,20 +65,19 @@
 }
 
 @media screen and (min-width: 768px) {
-  .team__ul {
+  .team__container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
   }
-  .team__li { width: calc(50% - 15px); }
+  .team__member { width: calc(50% - 15px); }
 }
 
 @media screen and (min-width: 1200px) {
   .team {
-    padding-bottom: 94px;
-
-    &__ul { padding: 0;}
-    &__li { width: 270px;} 
+    padding-bottom: 64px;
+    &__container { padding: 0;}
+    &__member { width: 270px;} 
   }
 }

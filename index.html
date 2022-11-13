@@ -37,19 +37,19 @@
 
         <div class="header__menu">
           <nav>
-            <a class="header__a header__select" href="./index.html">Estudio </a>
-            <a class="header__a bold" href="./portafolio.html">Portafolio</a>
-            <a class="header__a bold" href="./contactos.html">Contactos</a>
+            <a class="header__nav header__nav--select" href="./index.html">Estudio </a>
+            <a class="header__nav" href="./portafolio.html">Portafolio</a>
+            <a class="header__nav" href="./contactos.html">Contactos</a>
           </nav>
 
-          <div class="hc">
-            <a class="header__a" href="mailto:info@devstudio.com">
+          <div class="header__contacts">
+            <a class="header__contacts--element" href="mailto:info@devstudio.com">
               <svg class="header__svgmail">
                 <use href="./images/icons.svg#sobre"></use>
               </svg>
               info@devstudio.com</a
             >
-            <a class="header__a header__tel" href="tel:+525555296000">
+            <a class="header__contacts--element header__contacts--tel" href="tel:+525555296000">
               <svg class="header__svgtel">
                 <use href="./images/icons.svg#telefono"></use>
               </svg>
@@ -141,10 +141,9 @@
       </section>
 
       <section class="section" title="valores">
-        <div class="container">
-          <ul class="values">
-            <div class="values__li">
-              <div class="values__div">
+        <div class="container values">
+            <div class="values__container">
+              <div class="values__icon">
                 <svg class="values__svg">
                   <use
                     class="values-incons__use"
@@ -158,8 +157,8 @@
                 para así desarrollar una soluciòn a su medida
               </p>
             </div>
-            <div class="values__li">
-              <div class="values__div">
+            <div class="values__container">
+              <div class="values__icon">
                 <svg class="values__svg">
                   <use
                     class="values__use"
@@ -174,8 +173,8 @@
                 respetar los plazos acordados
               </p>
             </div>
-            <div class="values__li">
-              <div class="values__div">
+            <div class="values__container">
+              <div class="values__icon">
                 <svg class="values__svg">
                   <use
                     class="values__use"
@@ -189,8 +188,8 @@
                 aplicación de soluciones
               </p>
             </div>
-            <div class="values__li">
-              <div class="values__div">
+            <div class="values__container">
+              <div class="values__icon">
                 <svg class="values__svg">
                   <use
                     class="values__use"
@@ -204,14 +203,13 @@
                 asignadas. Es hora de simplificar los procesos laborales
               </p>
             </div>
-          </ul>
         </div>
       </section>
 
       <section class="section services" title="servicios">
         <div class="container">
           <h2>A qué nos dedicamos</h2>
-          <ul class="services__ul">
+          <ul class="services__container">
             <li>
               <img
                 src="./images/1aservicio1@1x.jpg"
@@ -247,8 +245,8 @@
         <div class="container">
           <h2>Nuestro Equipo</h2>
 
-          <ul class="team__ul">
-            <div class="team__li">
+          <div class="team__container">
+            <div class="team__member">
               <img
                 class="team__img"
                 src="./images/1bandres@1x.jpg"
@@ -278,7 +276,7 @@
                 </svg>
               </button>
             </div>
-            <div class="team__li">
+            <div class="team__member">
               <img
                 class="team__img"
                 src="./images/1bcarla@1x.jpg"
@@ -308,7 +306,7 @@
                 </svg>
               </button>
             </div>
-            <div class="team__li">
+            <div class="team__member">
               <img
                 class="team__img"
                 src="./images/1bmario@1x.jpg"
@@ -338,7 +336,7 @@
                 </svg>
               </button>
             </div>
-            <div class="team__li">
+            <div class="team__member">
               <img
                 class="team__img"
                 src="./images/1bpablo@1x.jpg"
@@ -368,49 +366,49 @@
                 </svg>
               </button>
             </div>
-          </ul>
+          </div>
         </div>
       </section>
 
       <section class="section container" title="clients">
         <h2>Clientes Regulares</h2>
         <ul class="clients">
-          <li>
+          <li class="clients__card">
             <button class="clients__button" type="button">
               <svg class="clients__svg">
                 <use href="./images/icons.svg#clientes1"></use>
               </svg>
             </button>
           </li>
-          <li>
+          <li class="clients__card">
             <button class="clients__button" type="button">
               <svg class="clients__svg">
                 <use href="./images/icons.svg#clientes2"></use>
               </svg>
             </button>
           </li>
-          <li>
+          <li class="clients__card">
             <button class="clients__button" type="button">
               <svg class="clients__svg">
                 <use href="./images/icons.svg#clientes3"></use>
               </svg>
             </button>
           </li>
-          <li>
+          <li class="clients__card">
             <button class="clients__button" type="button">
               <svg class="clients__svg">
                 <use href="./images/icons.svg#clientes4"></use>
               </svg>
             </button>
           </li>
-          <li>
+          <li class="clients__card">
             <button class="clients__button" type="button">
               <svg class="clients__svg">
                 <use href="./images/icons.svg#clientes6"></use>
               </svg>
             </button>
           </li>
-          <li>
+          <li class="clients__card">
             <button class="clients__button" type="button">
               <svg class="clients__svg">
                 <use href="./images/icons.svg#clientes5"></use>
@@ -471,7 +469,7 @@
           </li>
         </ul>
 
-        <form class="footer__form" name="boletin">
+        <form name="boletin">
           <h4 class="footer__title">Subscríbase al boletín informativo</h4>
           <label>
             <input
@@ -499,11 +497,10 @@
         </svg>
       </button>
    
-
       <div class="mobile">
-        <a href="./index.html" class="mobile__a bold">Estudio</a>
-        <a href="./portafolio.html" class="mobile__a bold">Portafolio</a>
-        <a href="./contactos.html" class="mobile__a bold">Contactos</a>  
+        <a class="mobile__a" href="./index.html">Estudio</a>
+        <a class="mobile__a" href="./portafolio.html">Portafolio</a>
+        <a class="mobile__a" href="./contactos.html">Contactos</a>  
           <a class="mobile__a mobile__tel" href="tel:+525555296000">
           +52 55 5529 6000
           </a>
