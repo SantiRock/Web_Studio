@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light dark;
   --colornormal: #757575;
   --colorbold: #212121;
   --colorbgdark: #2f303a;
@@ -6,6 +7,8 @@
   --colorgrey: #f5f4fa;
   --colorsvgs: #afb1b8;
   --colorwhite: white;
+  --colordarkmode: #AFAFAF;
+  --colorbgdarkmode: #303030;
   --transition: 250ms cubic-bezier(.4, 0, .2, 1);
 }
 
@@ -93,6 +96,14 @@ a:active {
   color: var(--colorwebstudio);
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--colordarkmode);
+  }
+  h2 {
+    color: white;
+  }
+}
 .menu__btn {
   margin-left: auto;
   margin-right: 23px;
@@ -185,6 +196,32 @@ a:active {
 @media screen and (min-width: 768px) {
   .menu__btn {
     display: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .menu__svg {
+    fill: var(--colorsvgs);
+  }
+  .menu__container {
+    background-color: var(--colorbold);
+  }
+  .menu__svgclose {
+    fill: var(--colorsvgs);
+  }
+  .mobile__a {
+    color: var(--colorwhite);
+  }
+  .mobile__tel {
+    color: var(--colordarkmode);
+  }
+  .mobile__email {
+    color: var(--colordarkmode);
+  }
+  .mobile__social:hover, .mobile__social:focus {
+    color: var(--colorwhite);
+  }
+  .mobile__deco {
+    border-left: 1px solid var(--colordarkmode);
   }
 }
 .header {
@@ -283,6 +320,26 @@ a:active {
   .header__svgtel {
     width: 10px;
     height: 16px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .header {
+    border-bottom-color: var(--colornormal);
+  }
+  .header__nav {
+    color: var(--colorwhite);
+  }
+  .header__nav--select {
+    color: var(--colorwebstudio);
+  }
+  .header__contacts--element {
+    color: var(--colordarkmode);
+  }
+  .header__svgmail {
+    fill: var(--colorsvgs);
+  }
+  .header__svgtel {
+    fill: var(--colorsvgs);
   }
 }
 .categories {
@@ -408,6 +465,21 @@ a:active {
   }
   .project__article {
     width: 370px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .categories__button {
+    background-color: var(--colorbgdarkmode);
+  }
+  .project__text {
+    background-color: var(--colorbgdarkmode);
+    border-color: var(--colornormal);
+  }
+  .project__name {
+    color: var(--colorwhite);
+  }
+  .project__type {
+    color: var(--colordarkmode);
   }
 }
 .footer {
@@ -552,6 +624,14 @@ a:active {
     margin-right: 12px;
     width: 358px;
     display: inline;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: var(--colorbgdarkmode);
+  }
+  .footer__input {
+    background-color: var(--colorbgdarkmode);
   }
 }
 

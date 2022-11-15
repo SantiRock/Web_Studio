@@ -13,6 +13,7 @@
         margin-bottom: 25px;
         width: 70px;
         height: 70px;
+        fill: var(--colorbold);
         /*border: 1px solid red;*/
       }
 
@@ -50,5 +51,15 @@
     &__container {
       width: 270px;
     }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .values {
+    &__icon { background-color: var(--colorbgdarkmode); }
+
+    &__svg { fill: var(--colorsvgs); }
+
+    &__h3 { color: var(--colorwhite); }
   }
 }

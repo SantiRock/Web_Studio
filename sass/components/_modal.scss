@@ -217,10 +217,44 @@
     }
     
     &__svg {
+        position: relative;
+        top: 1px;
         width: 11px;
         height: 11px;
         fill: black;
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    .modal {
+        background-color: var(--colorbold);
+        color: var(--colordarkmode);
 
+        &__h5 { color: var(--colorwhite); }
+        &__input { 
+            background-color: var(--colorbgdarkmode);
+            border-color: var(--colordarkmode);
+        }
+        &__textarea { 
+            background-color: var(--colorbgdarkmode);
+            border-color: var(--colordarkmode);
+        }
+        &__name {
+            background-image: url("../images/modalname2.svg");
+        }
+        &__tel {
+            background-image: url("../images/modaltel2.svg");
+        }
+        &__email {
+            background-image: url("../images/modalemail2.svg");
+        }
+    }
+
+    .closemodal {
+        &__button {
+            background-color: var(--colorbgdarkmode);
+            &:hover { background-color: var(--colorwhite); }
+        }
+        &__svg { fill: var(--colorwhite); }
+    }
+}

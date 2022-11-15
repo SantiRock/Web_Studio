@@ -42,3 +42,19 @@
     &__card { width: 170px }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .clients {
+
+    &__button {
+      background-color: var(--colorbgdarkmode);
+      border-color: var(--colornormal);
+      &:hover { 
+        background-color: var(--colorwebstudio);
+        & svg { fill: var(--colorwhite); }
+      }
+    }
+
+
+  }
+}

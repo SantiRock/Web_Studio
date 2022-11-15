@@ -87,22 +87,44 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .header__menu {
-        margin-left: 93px;
-    }
-    .header__contacts { 
-        flex-direction: row;
-        align-items: center;
-        font-size: 14px;
-        &--tel { margin-left: 30px; }  
-    }
-    .header__svgmail {
-        width: 16px;
-        height: 12px;
-    }
-    .header__svgtel {
-        width: 10px;
-        height: 16px;
+    .header {
+
+        &__menu { margin-left: 93px; }
+
+        &__contacts { 
+            flex-direction: row;
+            align-items: center;
+            font-size: 14px;
+            &--tel { margin-left: 30px; }  
+        }
+
+        &__svgmail {
+            width: 16px;
+            height: 12px;
+        }
+
+        &__svgtel {
+            width: 10px;
+            height: 16px;
+        }
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    .header {
+        border-bottom-color: var(--colornormal);
+
+        &__nav {
+            color: var(--colorwhite);
+            &--select {
+                color: var(--colorwebstudio);
+            }
+        }
+        
+        &__contacts--element { color: var(--colordarkmode); }
+
+        &__svgmail { fill: var(--colorsvgs); }
+
+        &__svgtel { fill:var(--colorsvgs); }
+    }
+}

@@ -74,3 +74,13 @@ a {
     &:active {
         color: var(--colorwebstudio); }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--colordarkmode);
+    }
+    h2 {
+        color: white;
+    }
+    
+}

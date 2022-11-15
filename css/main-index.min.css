@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light dark;
   --colornormal: #757575;
   --colorbold: #212121;
   --colorbgdark: #2f303a;
@@ -6,6 +7,8 @@
   --colorgrey: #f5f4fa;
   --colorsvgs: #afb1b8;
   --colorwhite: white;
+  --colordarkmode: #AFAFAF;
+  --colorbgdarkmode: #303030;
   --transition: 250ms cubic-bezier(.4, 0, .2, 1);
 }
 
@@ -93,6 +96,14 @@ a:active {
   color: var(--colorwebstudio);
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--colordarkmode);
+  }
+  h2 {
+    color: white;
+  }
+}
 .menu__btn {
   margin-left: auto;
   margin-right: 23px;
@@ -185,6 +196,32 @@ a:active {
 @media screen and (min-width: 768px) {
   .menu__btn {
     display: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .menu__svg {
+    fill: var(--colorsvgs);
+  }
+  .menu__container {
+    background-color: var(--colorbold);
+  }
+  .menu__svgclose {
+    fill: var(--colorsvgs);
+  }
+  .mobile__a {
+    color: var(--colorwhite);
+  }
+  .mobile__tel {
+    color: var(--colordarkmode);
+  }
+  .mobile__email {
+    color: var(--colordarkmode);
+  }
+  .mobile__social:hover, .mobile__social:focus {
+    color: var(--colorwhite);
+  }
+  .mobile__deco {
+    border-left-color: var(--colordarkmode);
   }
 }
 .header {
@@ -283,6 +320,26 @@ a:active {
   .header__svgtel {
     width: 10px;
     height: 16px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .header {
+    border-bottom-color: var(--colornormal);
+  }
+  .header__nav {
+    color: var(--colorwhite);
+  }
+  .header__nav--select {
+    color: var(--colorwebstudio);
+  }
+  .header__contacts--element {
+    color: var(--colordarkmode);
+  }
+  .header__svgmail {
+    fill: var(--colorsvgs);
+  }
+  .header__svgtel {
+    fill: var(--colorsvgs);
   }
 }
 .solutions {
@@ -583,11 +640,48 @@ a:active {
   border: 1px solid var(--colorwebstudio);
 }
 .closemodal__svg {
+  position: relative;
+  top: 1px;
   width: 11px;
   height: 11px;
   fill: black;
 }
 
+@media (prefers-color-scheme: dark) {
+  .modal {
+    background-color: var(--colorbold);
+    color: var(--colordarkmode);
+  }
+  .modal__h5 {
+    color: var(--colorwhite);
+  }
+  .modal__input {
+    background-color: var(--colorbgdarkmode);
+    border-color: var(--colordarkmode);
+  }
+  .modal__textarea {
+    background-color: var(--colorbgdarkmode);
+    border-color: var(--colordarkmode);
+  }
+  .modal__name {
+    background-image: url("../images/modalname2.svg");
+  }
+  .modal__tel {
+    background-image: url("../images/modaltel2.svg");
+  }
+  .modal__email {
+    background-image: url("../images/modalemail2.svg");
+  }
+  .closemodal__button {
+    background-color: var(--colorbgdarkmode);
+  }
+  .closemodal__button:hover {
+    background-color: var(--colorwhite);
+  }
+  .closemodal__svg {
+    fill: var(--colorwhite);
+  }
+}
 .values {
   /*border: 3px solid red;*/
 }
@@ -602,6 +696,7 @@ a:active {
   margin-bottom: 25px;
   width: 70px;
   height: 70px;
+  fill: var(--colorbold);
   /*border: 1px solid red;*/
 }
 .values__h3 {
@@ -636,6 +731,17 @@ a:active {
 @media screen and (min-width: 1200px) {
   .values__container {
     width: 270px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .values__icon {
+    background-color: var(--colorbgdarkmode);
+  }
+  .values__svg {
+    fill: var(--colorsvgs);
+  }
+  .values__h3 {
+    color: var(--colorwhite);
   }
 }
 .services {
@@ -744,6 +850,23 @@ a:active {
     width: 270px;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .team {
+    background-color: var(--colorbgdarkmode);
+  }
+  .team__member {
+    background-color: var(--colorbold);
+  }
+  .team__name {
+    color: var(--colorwhite);
+  }
+  .team__role {
+    color: var(--colordarkmode);
+  }
+  .team__button {
+    background-color: var(--colorbgdarkmode);
+  }
+}
 .clients {
   margin-bottom: 30px;
   display: flex;
@@ -792,6 +915,18 @@ a:active {
   }
   .clients__card {
     width: 170px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .clients__button {
+    background-color: var(--colorbgdarkmode);
+    border-color: var(--colornormal);
+  }
+  .clients__button:hover {
+    background-color: var(--colorwebstudio);
+  }
+  .clients__button:hover svg {
+    fill: var(--colorwhite);
   }
 }
 .footer {
@@ -936,6 +1071,14 @@ a:active {
     margin-right: 12px;
     width: 358px;
     display: inline;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: var(--colorbgdarkmode);
+  }
+  .footer__input {
+    background-color: var(--colorbgdarkmode);
   }
 }
 

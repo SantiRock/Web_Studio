@@ -108,3 +108,23 @@
         display: none;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .menu {
+        &__svg { fill: var(--colorsvgs); }
+        &__container { background-color: var(--colorbold); }
+        &__svgclose { fill:var(--colorsvgs); }
+    }
+
+    .mobile {
+        &__a { color: var(--colorwhite); }
+        &__tel { color: var(--colordarkmode); }
+        &__email { color: var(--colordarkmode) }
+        &__social {
+            &:hover,
+            &:focus {
+            color: var(--colorwhite); }
+         }
+        &__deco { border-left-color: var(--colordarkmode); }
+    }    
+}

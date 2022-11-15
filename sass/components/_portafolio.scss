@@ -139,3 +139,21 @@
     width: 370px;
   } 
 }
+
+@media (prefers-color-scheme: dark) {
+  .categories {
+    &__button {
+      background-color: var(--colorbgdarkmode);
+    }
+  }
+
+  .project {
+    &__text { 
+      background-color: var(--colorbgdarkmode);
+      border-color: var(--colornormal); 
+    
+    }
+    &__name { color: var(--colorwhite); }
+    &__type { color: var(--colordarkmode); }
+  }
+}

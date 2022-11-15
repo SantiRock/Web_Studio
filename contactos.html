@@ -1,12 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="WebStudio" />
+    <meta name="description" content="WebStudio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main-index.min.css" />
+    <title>Estudio</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="./index.html">WebStudio</a>
+
+        <button
+          class="menu__btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile"
+        >
+          <svg class="menu__svg">
+            <use href="./images/icons.svg#menuphone"></use>
+          </svg>
+        </button>
+
+        <div class="header__menu">
+          <nav>
+            <a class="header__nav" href="./index.html">Estudio </a>
+            <a class="header__nav" href="./portafolio.html">Portafolio</a>
+            <a class="header__nav header__nav--select" href="./contactos.html">Contactos</a>
+          </nav>
+
+          <div class="header__contacts">
+            <a class="header__contacts--element" href="mailto:info@devstudio.com">
+              <svg class="header__svgmail">
+                <use href="./images/icons.svg#sobre"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+            <a class="header__contacts--element header__contacts--tel" href="tel:+525555296000">
+              <svg class="header__svgtel">
+                <use href="./images/icons.svg#telefono"></use>
+              </svg>
+              +52 55 5529 6000</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu__container js-menu-container" id="mobile">
+        <button class="menu__btnclose js-close-menu">
+          <svg class="menu__svgclose">
+            <use href="./images/icons.svg#modalx"></use>
+          </svg>
+        </button>
+     
+        <div class="mobile">
+          <a class="mobile__a" href="./index.html">Estudio</a>
+          <a class="mobile__a" href="./portafolio.html">Portafolio</a>
+          <a class="mobile__a" href="./contactos.html">Contactos</a>  
+            <a class="mobile__a mobile__tel" href="tel:+525555296000">
+            +52 55 5529 6000
+            </a>
+            <a class="mobile__a mobile__email" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          <div class="mobile__socials">
+            <a class="mobile__social" >Instagram</a>
+            <a class="mobile__social mobile__deco">Twitter</a>
+            <a class="mobile__social mobile__deco">Facebook</a>
+            <a class="mobile__social mobile__deco">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+  
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="./js/mobile-menu.js"></script>
     
 </body>
 </html>

@@ -147,3 +147,10 @@
     display: inline;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: var(--colorbgdarkmode);
+    &__input { background-color: var(--colorbgdarkmode);}
+  }
+}

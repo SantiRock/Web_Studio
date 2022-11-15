@@ -1,0 +1,346 @@
+:root {
+  color-scheme: light dark;
+  --colornormal: #757575;
+  --colorbold: #212121;
+  --colorbgdark: #2f303a;
+  --colorwebstudio: #2196f3;
+  --colorgrey: #f5f4fa;
+  --colorsvgs: #afb1b8;
+  --colorwhite: white;
+  --colordarkmode: #AFAFAF;
+  --colorbgdarkmode: #303030;
+  --transition: 250ms cubic-bezier(.4, 0, .2, 1);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--colornormal);
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  /* Logo WebStudio */
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: var(--colorwebstudio);
+  text-decoration: none;
+  /*border: 1px solid red;*/
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  min-width: 320px;
+  /*border: 1px solid red;*/
+}
+
+.section {
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    /*border: 1px solid green;*/
+  }
+  .section {
+    padding-top: 94px;
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--colorbold);
+  text-align: center;
+  /*border: 1px solid red;*/
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  color: var(--colornormal);
+  text-decoration: none;
+  transition: color;
+  transition: var(--transition);
+  cursor: pointer;
+}
+a:hover {
+  color: var(--colorwebstudio);
+}
+a:focus {
+  color: var(--colorwebstudio);
+}
+a:active {
+  color: var(--colorwebstudio);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--colordarkmode);
+  }
+  h2 {
+    color: white;
+  }
+}
+.menu__btn {
+  margin-left: auto;
+  margin-right: 23px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  /*border: 1px solid red;*/
+}
+.menu__svg {
+  width: 24px;
+  height: 24px;
+  transition: fill;
+  transition: var(--transition);
+}
+.menu__svg:hover, .menu__svg:focus {
+  fill: var(--colorwebstudio);
+}
+.menu__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 40px;
+  background-color: white;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.menu__container.is-open {
+  transform: translateX(0);
+}
+.menu__btnclose {
+  margin-top: 21px;
+  margin-left: calc(100% - 40px);
+  padding: 0;
+  background-color: transparent;
+}
+.menu__svgclose {
+  width: 19px;
+  height: 19px;
+  transition: fill;
+  transition: var(--transition);
+}
+.menu__svgclose:hover, .menu__svgclose:focus {
+  fill: var(--colorwebstudio);
+}
+
+.mobile {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.mobile__a {
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--colorbold);
+  text-decoration: none;
+}
+.mobile__tel {
+  margin-top: 302px;
+  font-size: 34px;
+  color: var(--colornormal);
+}
+.mobile__email {
+  font-size: 24px;
+  margin-bottom: 64px;
+  color: var(--colornormal);
+}
+.mobile__socials {
+  flex-direction: row;
+}
+.mobile__social {
+  padding-right: 10px;
+  font-size: 18px;
+  color: var(--colorwebstudio);
+  transition: color;
+  transition: var(--transition);
+}
+.mobile__social:hover, .mobile__social:focus {
+  color: var(--colornormal);
+}
+.mobile__deco {
+  padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  .menu__btn {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .menu__svg {
+    fill: var(--colorsvgs);
+  }
+  .menu__container {
+    background-color: var(--colorbold);
+  }
+  .menu__svgclose {
+    fill: var(--colorsvgs);
+  }
+  .mobile__a {
+    color: var(--colorwhite);
+  }
+  .mobile__tel {
+    color: var(--colordarkmode);
+  }
+  .mobile__email {
+    color: var(--colordarkmode);
+  }
+  .mobile__social:hover, .mobile__social:focus {
+    color: var(--colorwhite);
+  }
+  .mobile__deco {
+    border-left-color: var(--colordarkmode);
+  }
+}
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.header__menu {
+  margin-left: 8%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*border: 1px solid blue;*/
+}
+.header__nav {
+  margin-right: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.143;
+  color: var(--colorbold);
+  letter-spacing: 0.02em;
+}
+.header__nav--select {
+  position: relative;
+  color: var(--colorwebstudio);
+}
+.header__nav--select::after {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background: var(--colorwebstudio);
+  border-radius: 2px;
+}
+.header__contacts {
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.header__contacts--element:hover svg {
+  fill: var(--colorwebstudio);
+  cursor: pointer;
+}
+.header__svgmail {
+  position: relative;
+  top: 1px;
+  margin-right: 8px;
+  width: 14px;
+  height: 10px;
+  fill: var(--colornormal);
+  transition: fill;
+  transition: var(--transition);
+}
+.header__svgtel {
+  position: relative;
+  top: 2px;
+  margin-right: 8px;
+  width: 10px;
+  height: 14px;
+  fill: var(--colornormal);
+  transition: fill;
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__menu {
+    margin-left: 93px;
+  }
+  .header__contacts {
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+  }
+  .header__contacts--tel {
+    margin-left: 30px;
+  }
+  .header__svgmail {
+    width: 16px;
+    height: 12px;
+  }
+  .header__svgtel {
+    width: 10px;
+    height: 16px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .header {
+    border-bottom-color: var(--colornormal);
+  }
+  .header__nav {
+    color: var(--colorwhite);
+  }
+  .header__nav--select {
+    color: var(--colorwebstudio);
+  }
+  .header__contacts--element {
+    color: var(--colordarkmode);
+  }
+  .header__svgmail {
+    fill: var(--colorsvgs);
+  }
+  .header__svgtel {
+    fill: var(--colorsvgs);
+  }
+}
+
+/*# sourceMappingURL=main-contacts.min.css.map */

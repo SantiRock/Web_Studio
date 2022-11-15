@@ -81,3 +81,18 @@
     &__member { width: 270px;} 
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .team { 
+    background-color: var(--colorbgdarkmode);
+
+    &__member { background-color: var(--colorbold); }
+
+    &__name { color: var(--colorwhite); }
+
+    &__role { color: var(--colordarkmode); }
+
+    &__button { background-color: var(--colorbgdarkmode);}
+  
+  }
+}
